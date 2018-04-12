@@ -56,3 +56,7 @@ or simply
 fastgate check_login
 ```
 (you will be prompted for login info)
+
+# Credits
+
+- @Nimayer https://github.com/Nimayer/fastgate-toolkit
