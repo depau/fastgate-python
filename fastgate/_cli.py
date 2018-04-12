@@ -24,7 +24,7 @@ def get_root(fgate):
 @click.pass_obj
 def shell(fgate, cmd):
     """Run command on router with shell injection (no output)."""
-    _cmd = " ".join(("'{}'".format(i.replace("'", r"\'")) for i in cmd))
+    _cmd = " ".join(cmd)
     fgate.shell(_cmd)
 
 
