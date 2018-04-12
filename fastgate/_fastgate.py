@@ -6,6 +6,7 @@ import time
 
 import requests
 
+
 def random_string(length):
     letters = string.ascii_letters + string.digits
     return ''.join(random.choice(letters) for i in range(length))
@@ -18,7 +19,7 @@ class FastGateHTTP(object):
         self.seed = "{}pytester{}".format(int(time.time()), random_string(12))
         self.session_key = "NULL"
         self.base_url = "/status.cgi"
-        self.base_params = {
+        self.base_params = lambda: {
             "_": self.seed,
             "sessionKey": self.session_key
         }
@@ -26,7 +27,7 @@ class FastGateHTTP(object):
         self.cookies = {"XSRF-TOKEN": "ciao"}
 
     def request(self, method, params={}, cookies={}, headers={}, **kwargs):
-        _params = self.base_params.copy()
+        _params = self.base_params()
         _params.update(params)
         _cookies = self.cookies.copy()
         _cookies.update(cookies)
