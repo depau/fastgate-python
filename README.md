@@ -32,7 +32,7 @@ fastgate get_root
 ```
 You can then SSH to the router. Log in as `lanadmin`, `lanpasswd`.
 
-In the router's custom shell, run the `sh` hidden command and log in as `lanadmin`, `lanpasswd` to get a root shell.
+In the router's custom shell, run the `sh` hidden command and log in as `lanadmin`, `lanpasswd` or `FASTGate`, `Testplant123` to get a root shell.
 
 #### Reboot router
 
