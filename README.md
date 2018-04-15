@@ -1,4 +1,5 @@
 # FastGATE Python tool
+https://github.com/Nimayer/fastgate-toolkit/wiki
 
 Python tools for Fastweb FastGATE exploits.
 
