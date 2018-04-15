@@ -44,6 +44,9 @@ fastgate reboot
 
 ```sh
 fastgate shell (command)
+# i.e.
+fastgate shell /usr/sbin/rc_task firewall restart
+fastgate shell /usr/sbin/rc_task sshd restart
 ```
 
 #### Check web UI login
