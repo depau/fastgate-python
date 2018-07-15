@@ -1,6 +1,6 @@
 import click
 
-from ._fastgate import FastGateExploit
+from fastgate.exploits.pwd_field import PasswdFieldExploit
 
 
 @click.group()
@@ -9,7 +9,7 @@ from ._fastgate import FastGateExploit
 @click.option("--port", "-p", default=80, envvar="FASTGATE_PORT", required=False, type=int, help="HTTP port")
 @click.pass_context
 def cli(ctx, host, port):
-    ctx.obj = FastGateExploit(host, port)
+    ctx.obj = PasswdFieldExploit(host, port)
 
 
 @cli.command()
