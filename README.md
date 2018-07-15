@@ -1,4 +1,7 @@
 # FastGATE Python tool
+See wiki for more info: https://github.com/Nimayer/fastgate-toolkit/wiki
+
+Remote exploitation: https://github.com/tgragnato/FASTGate-RCE
 
 Python tools for Fastweb FastGATE exploits.
 
@@ -32,7 +35,7 @@ fastgate get_root
 ```
 You can then SSH to the router. Log in as `lanadmin`, `lanpasswd`.
 
-In the router's custom shell, run the `sh` hidden command and log in as `lanadmin`, `lanpasswd` to get a root shell.
+In the router's custom shell, run the `sh` hidden command and log in as `lanadmin`, `lanpasswd` or `FASTGate`, `Testplant123` to get a root shell.
 
 #### Reboot router
 
@@ -44,6 +47,9 @@ fastgate reboot
 
 ```sh
 fastgate shell (command)
+# i.e.
+fastgate shell /usr/sbin/rc_task firewall restart
+fastgate shell /usr/sbin/rc_task sshd restart
 ```
 
 #### Check web UI login
