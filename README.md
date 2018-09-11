@@ -1,7 +1,9 @@
 # FastGATE Python tool
 See wiki for more info: https://github.com/Nimayer/fastgate-toolkit/wiki
 
-Remote exploitation: https://github.com/tgragnato/FASTGate-RCE
+## Note
+
+The vulnerability exploited by this program has been fixed. While we've found many more vulnerabilities and exploited them, we won't release the exploits until they're fixed.
 
 Python tools for Fastweb FastGATE exploits.
 
