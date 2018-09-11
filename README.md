@@ -3,7 +3,7 @@ See wiki for more info: https://github.com/Nimayer/fastgate-toolkit/wiki
 
 ## Note
 
-The vulnerability exploited by this program has been fixed. While we've found many more vulnerabilities and exploited them, we won't release the exploits until they're fixed.
+**The vulnerability exploited by this program has been fixed. While we've found many more vulnerabilities and exploited them, we will NOT release the exploits until they're fixed.**
 
 Python tools for Fastweb FastGATE exploits.
 
